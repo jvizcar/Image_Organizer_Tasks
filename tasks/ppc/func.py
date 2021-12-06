@@ -62,8 +62,8 @@ def get_center_roi(gc, imid, roi_size=500):
     return region
 
 
-@app.route("/test_ppc")
-def get_marker():
+@app.route("/ppc")
+def test_ppc():
     # get list of image ids
     gc = login()
     ids = request.args.get('ids')
